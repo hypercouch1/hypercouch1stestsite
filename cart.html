@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - My Computer Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Your Cart</h1>
+    <nav>
+      <ul>
+        <a href="index.html" class="details-button" href="#"">Home</a> 
+        <a href="store.html" class="details-button" href="#"">Store</a>
+        <a href="cart.html" class="details-button" href="#"">Cart (<span id="cart-count">0</span>)</a>
+        <a id="dark-mode-toggle" class="darktoggle-button" href="#"">Toggle Dark Mode</a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Cart Items</h2>
+      <div id="cart-items-container"></div>
+      <p id="cart-total">Total: $0.00</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 My Computer Store</p>
+  </footer>
+  <script src="js/cart.js"></script>
+  <script src="js/dark-mode.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store - My Computer Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Our Products</h1>
+    <nav>
+      <ul>
+        <a href="index.html" class="details-button" href="#"">Home</a> 
+        <a href="store.html" class="details-button" href="#"">Store</a>
+        <a href="cart.html" class="details-button" href="#"">Cart (<span id="cart-count">0</span>)</a>
+        <a id="dark-mode-toggle" class="darktoggle-button" href="#"">Toggle Dark Mode</a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Available Products</h2>
+      <div class="products-grid">
+        <div class="product">
+          <img src="images/high-performance-laptop.jpeg" alt="Laptop">
+          <h3>High-Performance Laptop</h3>
+          <p>$999.99</p>
+          <a href="laptop-details.html" class="details-button">More Details</a>
+          <button class="add-to-cart-button" onclick="addToCart('High-Performance Laptop', 999.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="images/desktop.jpg" alt="Desktop">
+          <h3>Powerful Desktop</h3>
+          <p>$1499.99</p>
+          <a href="desktop-details.html" class="details-button">More Details</a>
+          <button class="add-to-cart-button" onclick="addToCart('Powerful Desktop', 1499.99)">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 My Computer Store</p>
+  </footer>
+  <script src="js/cart.js"></script>
+  <script src="js/dark-mode.js"></script>
+</body>
+</html>
