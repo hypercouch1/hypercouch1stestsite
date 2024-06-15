@@ -15,6 +15,14 @@ function addToCart(name, price) {
   updateCartCount();
 }
 
+// Function to clear the cart
+function clearCart() {
+  cart = [];
+  localStorage.setItem('cart', JSON.stringify(cart));
+  updateCartCount();
+  renderCartItems();
+}
+
 // Function to render cart items on the cart page
 function renderCartItems() {
   const cartItemsContainer = document.getElementById('cart-items-container');
@@ -54,4 +62,3 @@ updateCartCount();
 if (window.location.pathname.endsWith('cart.html')) {
   renderCartItems();
 }
-
