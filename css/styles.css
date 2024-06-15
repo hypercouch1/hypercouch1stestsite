@@ -80,7 +80,7 @@ main {
 }
 
 .product:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /* Button styles */
@@ -260,8 +260,7 @@ nav ul li a.dark-mode {
   background-color: #666;
 }
 
-.darktoggle-button,
-.add-to-cart-button {
+.darktoggle-button {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px 0;
@@ -275,10 +274,33 @@ nav ul li a.dark-mode {
 }
 
 .darktoggle-button {
-  background-color: #878787;
+  background-color: #292929;
   color: white;
 }
 
 .darktoggle-button:hover {
-  background-color: #424242;
+  background-color: 
+    #141414;
+}
+
+.removefromcart-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.removefromcart-button {
+  background-color: #ff1a1a;
+  color: white;
+}
+
+.removefromcart-button:hover {
+  background-color: #ff0000;
 }
