@@ -1,28 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laptop Details - My Computer Store</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Details</h1>
-    <nav>
-      <ul>
-        <a href="index.html" class="details-button" href="#"">Home</a> 
-        <a href="store.html" class="details-button" href="#"">Store</a>
-        <a href="cart.html" class="details-button" href="#"">Cart (<span id="cart-count">0</span>)</a>
-        <a id="dark-mode-toggle" class="darktoggle-button" href="#"">Toggle Dark Mode</a>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="product-details">
-      <img src="images/high-performance-laptop.jpeg" alt="Laptop">
-      <h3>High-Performance Laptop</h3>
-      <p>$999.99</p>
-      <p>This high-performance laptop is perfect for all your computing needs. It features a fast processor, ample storage, and a high-resolution display.</p>
-      <button
-        <script src="js/dark-mode.js"></script>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Laptop Details - My Computer Store</title>
+              <link rel="stylesheet" href="css/styles.css">
+            </head>
+            <body>
+              <header>
+                <h1>Product Details</h1>
+                <nav>
+                  <ul>
+                    <li><a href="index.html" class="nav-button">Home</a></li>
+                    <li><a href="store.html" class="nav-button">Store</a></li>
+                    <li><a href="cart.html" class="nav-button">Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a id="dark-mode-toggle" class="darktoggle-button" href="#">Toggle Dark Mode</a></li>
+                  </ul>
+                </nav>
+              </header>
+              <main>
+                <section class="product-details">
+                  <img src="images/high-performance-laptop.jpeg" alt="Laptop">
+                  <h3>High-Performance Laptop</h3>
+                  <p>$999.99</p>
+                  <p>This high-performance laptop is perfect for all your computing needs. It features a fast processor, ample storage, and a high-resolution display.</p>
+                  <button class="add-to-cart-button" onclick="addToCart('High-Performance Laptop', 999.99)">Add to Cart</button>
+                  <a href="store.html" class="details-button">Back to Store</a>
+                </section>
+              </main>
+              <footer>
+                <p>&copy; 2024 My Computer Store</p>
+              </footer>
+              <script src="js/cart.js"></script>
+              <script src="js/dark-mode.js"></script>
+            </body>
+            </html>
