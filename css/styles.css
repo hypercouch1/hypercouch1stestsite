@@ -15,9 +15,8 @@ body {
 }
 
 /* Header styles with gradient */
-head {
+header {
   background: linear-gradient(45deg, #333, #555);
-  color: #fff;
   padding: 1rem;
   text-align: center;
   flex-shrink: 0;
