@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - My Computer Store</title>
+  <title>My Computer Store</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,17 +11,32 @@
     <h1>Welcome to My Computer Store</h1>
     <nav>
       <ul>
-        <a href="index.html" class="details-button" href="#"">Home</a> 
-        <a href="store.html" class="details-button" href="#"">Store</a>
-        <a href="cart.html" class="details-button" href="#"">Cart (<span id="cart-count">0</span>)</a>
-        <a id="dark-mode-toggle" class="darktoggle-button" href="#"">Toggle Dark Mode</a>
+        <li><a href="index.html" class="details-button">Home</a></li>
+        <li><a href="store.html" class="details-button">Store</a></li>
+        <li><a href="cart.html" class="details-button">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a id="dark-mode-toggle" class="darktoggle-button" href="#">Toggle Dark Mode</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section>
-      <h2>Our Products</h2>
-      <p>Discover our range of high-quality products to meet all your computing needs.</p>
+      <h2>Featured Products</h2>
+      <div class="products-grid">
+        <div class="product">
+          <img src="images/high-performance-laptop.jpeg" alt="Laptop">
+          <h3>High Performance Laptop</h3>
+          <p>$999.99</p>
+          <a href="laptop-details.html" class="details-button">More Details</a>
+          <button class="add-to-cart-button" onclick="addToCart('High Performance Laptop', 999.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="images/desktop.jpeg" alt="Desktop">
+          <h3>Gaming Desktop</h3>
+          <p>$1499.99</p>
+          <a href="desktop-details.html" class="details-button">More Details</a>
+          <button class="add-to-cart-button" onclick="addToCart('Gaming Desktop', 1499.99)">Add to Cart</button>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
